@@ -149,6 +149,6 @@ function regeditModification {
 makeLogFile
 Write-Host "Script d'optimisation by ChokoJoestar" > "C:\ChokoJoestar\Optimization.log"
 Write-Host "Creation d'un point de restoration" > "C:\ChokoJoestar\Optimization.log"
-powershell.exe -ExecutionPolicy Bypass -NoExit -Command "Checkpoint-Computer -Description 'Optimization-ByChoko' -RestorePointType 'MODIFY_SETTINGS'"
+powershell.exe -ExecutionPolicy Bypass -Command "Checkpoint-Computer -Description 'Optimization-ByChoko' -RestorePointType 'MODIFY_SETTINGS'"
 Write-Host "Modification du regedit" > "C:\ChokoJoestar\Optimization.log"
 regeditModification
